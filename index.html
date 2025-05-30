@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мангалы ручной работы - Эксклюзивные мангалы высшего качества</title>
+    <meta name="description" content="Изготовление и продажа эксклюзивных мангалов ручной работы. Индивидуальный дизайн, высокое качество, доставка по всей России.">
+    <meta name="keywords" content="мангалы, мангалы ручной работы, кованые мангалы, барбекю, гриль, эксклюзивные мангалы, подарок мужчине, дача, отдых на природе">
+    <meta property="og:title" content="Мангалы ручной работы - Эксклюзивные мангалы высшего качества">
+    <meta property="og:description" content="Изготовление и продажа эксклюзивных мангалов ручной работы. Индивидуальный дизайн, высокое качество, доставка по всей России.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔥</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF3A3A',
+                        secondary: '#1A1A1A'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    },
+                    animation: {
+                        'gradient-x': 'gradient-x 3s ease infinite',
+                    },
+                    keyframes: {
+                        'gradient-x': {
+                            '0%, 100%': {
+                                'background-position': '0% 50%'
+                            },
+                            '50%': {
+                                'background-position': '100% 50%'
+                            },
+                        },
+                    },
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header fixed top-0 left-0 w-full h-20 z-50 flex items-center justify-between px-4 lg:px-16">
+        <div class="logo text-2xl font-['Pacifico'] text-white flex items-center gap-2">
+            <i class="ri-fire-line text-primary text-3xl"></i>
+        </div>
+        
+        <nav class="hidden md:flex items-center space-x-8">
+            <a href="#catalog" class="text-white hover:text-primary transition-colors">Каталог</a>
+            <a href="#advantages" class="text-white hover:text-primary transition-colors">Преимущества</a>
+            <a href="#process" class="text-white hover:text-primary transition-colors">Процесс</a>
+            <a href="#reviews" class="text-white hover:text-primary transition-colors">Отзывы</a>
+            <a href="#contacts" class="text-white hover:text-primary transition-colors">Контакты</a>
+        </nav>
+        
+        <div class="flex items-center">
+            <a href="tel:+79001234567" class="hidden md:flex flex-col mr-6 text-white hover:text-primary transition-colors">
+                <div class="flex items-center">
+                    <span>+7 (900) 123-45-67</span>
+                </div>
+                <span class="text-sm text-gray-400">Ежедневно 9:00-21:00</span>
+            </a>
+            <button class="btn-primary py-3 px-6 !rounded-button whitespace-nowrap font-medium hidden md:block" onclick="openModal('simpleOrderModal')">Заказать</button>
+        </div>
+        
+        <div class="md:hidden w-10 h-10 flex items-center justify-center" onclick="toggleMobileMenu()">
+            <i class="ri-menu-line text-xl"></i>
+        </div>
+    </header>
+    
+    <!-- Мобильное меню -->
+    <div id="mobileMenu" class="fixed top-0 left-0 w-full h-screen bg-secondary z-50 transform translate-x-full transition-transform duration-300 flex flex-col">
+        <div class="flex justify-between items-center p-6 border-b border-gray-800">
+            <div class="logo text-2xl font-['Pacifico'] text-white">
+            </div>
+            <div class="w-10 h-10 flex items-center justify-center" onclick="toggleMobileMenu()">
+                <i class="ri-close-line text-xl"></i>
+            </div>
+        </div>
+        <div class="flex flex-col p-6 space-y-6">
+            <a href="#catalog" class="text-white text-lg" onclick="toggleMobileMenu()">Каталог</a>
+            <a href="#advantages" class="text-white text-lg" onclick="toggleMobileMenu()">Преимущества</a>
+            <a href="#process" class="text-white text-lg" onclick="toggleMobileMenu()">Процесс</a>
+            <a href="#reviews" class="text-white text-lg" onclick="toggleMobileMenu()">Отзывы</a>
+            <a href="#contacts" class="text-white text-lg" onclick="toggleMobileMenu()">Контакты</a>
+            <a href="tel:+79001234567" class="text-white text-lg flex flex-col" onclick="toggleMobileMenu()">
+                <div class="flex items-center">
+                    <span>+7 (900) 123-45-67</span>
+                </div>
+                <span class="text-sm text-gray-400">Ежедневно 9:00-21:00</span>
+            </a>
+            <button class="btn-primary py-3 px-6 !rounded-button whitespace-nowrap font-medium mt-4" onclick="openModal('simpleOrderModal'); toggleMobileMenu();">Заказать</button>
+        </div>
+    </div>
+
+    <!-- Секция Hero со слайдером -->
+    <section class="hero-slider relative">
+        <div class="slide active" style="background-image: url('/img/11.jpg')"></div>
+        <div class="slide" style="background-image: url('/img/bg.jpg')"></div>
+        <div class="slide" style="background-image: url('/img/4.jpg')"></div>
+        
+        <div class="overlay"></div>
+        
+        <div class="container mx-auto px-4 lg:px-16 relative z-10 py-24 md:py-40">
+            <div class="flex flex-col md:flex-row items-start gap-8 md:gap-12">
+                <div class="w-full md:w-1/1">
+                    <h1 class="md:block text-3xl md:text-5xl lg:text-6xl font-bold mb-6 md:mb-8">
+                        Эксклюзивные <span class="text-primary"><br>мангалы</span>&nbsp;ручной <br>работы</h1>
+                    <p class="hidden md:block text-base md:text-xl mb-6 md:mb-8 text-gray-300 max-w-xl">
+                        Создаем уникальные мангалы с индивидуальным дизайном, которые станут центром внимания на вашем участке и прослужат десятилетия.
+                    </p>
+                    <ul class="mb-3 md:mb-10 space-y-3 md:space-y-4">
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 md:w-6 md:h-6 flex-shrink-0 flex items-center justify-center mr-3 text-primary">
+                                <i class="ri-check-line"></i>
+                            </div>
+                            <span class="text-base md:text-lg">Толщина металла от 4 мм — прослужит более 10 лет</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 md:w-6 md:h-6 flex-shrink-0 flex items-center justify-center mr-3 text-primary">
+                                <i class="ri-check-line"></i>
+                            </div>
+                            <span class="text-base md:text-lg">Индивидуальный дизайн под ваши пожелания</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 md:w-6 md:h-6 flex-shrink-0 flex items-center justify-center mr-3 text-primary">
+                                <i class="ri-check-line"></i>
+                            </div>
+                            <span class="text-base md:text-lg">Доставка и установка по всей России</span>
+                        </li>
+                    </ul>
+                    <button class="hidden md:block btn-primary py-3 md:py-4 px-6 md:px-8 !rounded-button whitespace-nowrap font-medium text-base md:text-lg" onclick="openModal('quizModal')">
+                        Подобрать мангал
+                    </button>
+                </div>
+                
+                <div class="w-full md:w-1/2 mt-0 md:mt-0">
+                    <div class="bg-secondary bg-opacity-80 p-6 md:p-8 !rounded-lg border border-gray-800">
+                        <h3 class="text-xl md:text-2xl font-bold mb-6 md:mb-8">Получить консультацию</h3>
+                        <form id="heroForm" class="space-y-4 md:space-y-6">
+                            <div>
+                                <label for="heroName" class="block mb-2 text-sm md:text-base font-medium">Ваше имя</label>
+                                <input type="text" id="heroName" class="phone-input text-base" placeholder="Введите ваше имя" required>
+                                <div class="error-message text-sm" id="heroNameError">Пожалуйста, введите ваше имя</div>
+                            </div>
+                            <div>
+                                <label for="heroPhone" class="block mb-2 text-sm md:text-base font-medium">Номер телефона</label>
+                                <input type="tel" id="heroPhone" class="phone-input text-base" placeholder="+7 (___) ___-__-__" required>
+                                <div class="error-message text-sm" id="heroPhoneError">Пожалуйста, введите корректный номер телефона</div>
+                            </div>
+                            <div>
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" id="heroConsent" checked required>
+                                    <span class="checkmark"></span>
+                                    <span class="text-sm md:text-base text-gray-300">Я согласен на обработку персональных данных</span>
+                                </label>
+                                <div class="error-message text-sm" id="heroConsentError">Необходимо согласие на обработку данных</div>
+                            </div>
+                            <button type="submit" class="btn-primary w-full py-4 md:py-5 !rounded-button whitespace-nowrap font-medium text-base md:text-lg relative overflow-hidden group">
+                                <span class="relative z-10">Получить консультацию</span>
+                                <div class="absolute inset-0 bg-gradient-to-r from-primary via-red-500 to-primary bg-[length:200%_100%] animate-gradient-x"></div>
+                                <div class="absolute inset-0 bg-gradient-to-r from-red-600 via-red-700 to-red-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Анимированный индикатор скролла вниз -->
+        <div id="scroll-down-button" class="hidden md:flex absolute bottom-8 left-1/2 -translate-x-1/2 flex-col items-center animate-bounce cursor-pointer">
+            <div class="w-8 h-12 border-2 border-white rounded-full flex justify-center relative">
+                <span class="animate-scroll-down absolute top-2 w-1.5 h-1.5 bg-white rounded-full"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция каталога -->
+    <section id="catalog" class="py-20 bg-[#0F0F0F]">
+        <div class="container mx-auto px-4 lg:px-16">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Наш каталог <span class="text-primary">мангалов</span></h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Выберите готовый вариант или закажите индивидуальный дизайн по вашим пожеланиям</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Catalog Item 1 -->
+                <div class="bg-secondary !rounded-lg overflow-hidden transition-transform hover:transform hover:scale-[1.02] catalog-item cursor-pointer border border-transparent hover:border-primary" onclick="openModal('orderModal', 'Мангал «Классик»')">
+                    <div class="h-64 overflow-hidden">
+                        <img src="/img/1.jpg" alt="Мангал Классик" class="w-full h-full object-cover transition-transform hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Мангал «Классик»</h3>
+                        <p class="text-gray-400 mb-4">Классический мангал из стали 4 мм с художественной ковкой. Размер: 100×40×85 см.</p>
+                        <div class="features hidden">
+                            <li>Толщина металла: 4 мм</li>
+                            <li>Размер: 100×40×85 см</li>
+                            <li>Художественная ковка</li>
+                            <li>Прочная конструкция</li>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-primary">от 15 900 ₽</span>
+                            <button class="btn-outline py-2 px-4 !rounded-button whitespace-nowrap" onclick="event.stopPropagation(); openModal('orderModal', 'Мангал «Классик»')">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Catalog Item 2 -->
+                <div class="bg-secondary !rounded-lg overflow-hidden transition-transform hover:transform hover:scale-[1.02] catalog-item cursor-pointer border border-transparent hover:border-primary" onclick="openModal('orderModal', 'Мангал «Премиум»')">
+                    <div class="h-64 overflow-hidden">
+                        <img src="/img/2.jpg" alt="Мангал Премиум" class="w-full h-full object-cover transition-transform hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Мангал «Премиум»</h3>
+                        <p class="text-gray-400 mb-4">Мангал с боковыми столиками и полкой для дров. Сталь 5 мм. Размер: 150×50×90 см.</p>
+                        <div class="features hidden">
+                            <li>Толщина металла: 5 мм</li>
+                            <li>Размер: 150×50×90 см</li>
+                            <li>Боковые столики</li>
+                            <li>Полка для дров</li>
+                            <li>Усиленная конструкция</li>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-primary">от 24 500 ₽</span>
+                            <button class="btn-outline py-2 px-4 !rounded-button whitespace-nowrap" onclick="event.stopPropagation(); openModal('orderModal', 'Мангал «Премиум»')">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Catalog Item 3 -->
+                <div class="bg-secondary !rounded-lg overflow-hidden transition-transform hover:transform hover:scale-[1.02] catalog-item cursor-pointer border border-transparent hover:border-primary" onclick="openModal('orderModal', 'Мангал «Люкс»')">
+                    <div class="h-64 overflow-hidden">
+                        <img src="/img/3.jpg" alt="Мангал Люкс" class="w-full h-full object-cover transition-transform hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Мангал «Люкс»</h3>
+                        <p class="text-gray-400 mb-4">Мангал с крышей и дымоходом. Художественная ковка, сталь 6 мм. Размер: 180×60×200 см.</p>
+                        <div class="features hidden">
+                            <li>Толщина металла: 6 мм</li>
+                            <li>Размер: 180×60×200 см</li>
+                            <li>Крыша и дымоход</li>
+                            <li>Художественная ковка</li>
+                            <li>Премиальная отделка</li>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-primary">от 32 900 ₽</span>
+                            <button class="btn-outline py-2 px-4 !rounded-button whitespace-nowrap" onclick="event.stopPropagation(); openModal('orderModal', 'Мангал «Люкс»')">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button class="btn-primary py-3 px-6 !rounded-button whitespace-nowrap font-medium" onclick="openModal('quizModal')">Подобрать индивидуальный мангал</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция преимуществ -->
+    <section id="advantages" class="py-20">
+        <div class="container mx-auto px-4 lg:px-16">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Почему выбирают <span class="text-primary">нас</span></h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Наши мангалы — это не просто приспособление для жарки, а настоящее произведение искусства</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Advantage 1 -->
+                <div class="bg-secondary bg-opacity-50 p-6 !rounded-lg border border-gray-800 hover:border-primary transition-colors">
+                    <div class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-10 !rounded-full mb-6">
+                        <i class="ri-hammer-line text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Ручная работа</h3>
+                    <p class="text-gray-400">Каждый мангал изготавливается вручную опытными мастерами с многолетним стажем работы</p>
+                </div>
+                
+                <!-- Advantage 2 -->
+                <div class="bg-secondary bg-opacity-50 p-6 !rounded-lg border border-gray-800 hover:border-primary transition-colors">
+                    <div class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-10 !rounded-full mb-6">
+                        <i class="ri-shield-check-line text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Долговечность</h3>
+                    <p class="text-gray-400">Используем сталь толщиной от 4 до 6 мм, которая не прогорит и не деформируется даже после многих лет использования</p>
+                </div>
+                
+                <!-- Advantage 3 -->
+                <div class="bg-secondary bg-opacity-50 p-6 !rounded-lg border border-gray-800 hover:border-primary transition-colors">
+                    <div class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-10 !rounded-full mb-6">
+                        <i class="ri-palette-line text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Уникальный дизайн</h3>
+                    <p class="text-gray-400">Разрабатываем индивидуальный дизайн по вашим пожеланиям или можете выбрать из готовых вариантов</p>
+                </div>
+                
+                <!-- Advantage 4 -->
+                <div class="bg-secondary bg-opacity-50 p-6 !rounded-lg border border-gray-800 hover:border-primary transition-colors">
+                    <div class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-10 !rounded-full mb-6">
+                        <i class="ri-truck-line text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Доставка и установка</h3>
+                    <p class="text-gray-400">Доставляем и устанавливаем мангалы по всей России. Гарантируем сохранность при транспортировке</p>
+                </div>
+                
+                <!-- Advantage 5 -->
+                <div class="bg-secondary bg-opacity-50 p-6 !rounded-lg border border-gray-800 hover:border-primary transition-colors">
+                    <div class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-10 !rounded-full mb-6">
+                        <i class="ri-time-line text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Быстрое изготовление</h3>
+                    <p class="text-gray-400">Срок изготовления от 5 до 14 дней в зависимости от сложности модели и загруженности мастеров</p>
+                </div>
+                
+                <!-- Advantage 6 -->
+                <div class="bg-secondary bg-opacity-50 p-6 !rounded-lg border border-gray-800 hover:border-primary transition-colors">
+                    <div class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-10 !rounded-full mb-6">
+                        <i class="ri-service-line text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Гарантия 5 лет</h3>
+                    <p class="text-gray-400">Предоставляем гарантию на все наши изделия. В случае обнаружения дефектов — бесплатно устраним</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция процесса -->
+    <section id="process" class="py-20 bg-[#0F0F0F]">
+        <div class="container mx-auto px-4 lg:px-16">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Как мы работаем</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">От заявки до установки готового мангала — прозрачный процесс на каждом этапе</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div class="relative">
+                    <div class="bg-secondary p-6 !rounded-lg border border-gray-800 h-full">
+                        <div class="absolute -top-4 -left-4 w-12 h-12 bg-primary !rounded-full flex items-center justify-center font-bold text-xl">1</div>
+                        <h3 class="text-xl font-bold mb-3 mt-4">Заявка и консультация</h3>
+                        <p class="text-gray-400">Оставляете заявку на сайте или звоните нам. Наш специалист консультирует по всем вопросам</p>
+                    </div>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="relative">
+                    <div class="bg-secondary p-6 !rounded-lg border border-gray-800 h-full">
+                        <div class="absolute -top-4 -left-4 w-12 h-12 bg-primary !rounded-full flex items-center justify-center font-bold text-xl">2</div>
+                        <h3 class="text-xl font-bold mb-3 mt-4">Проектирование</h3>
+                        <p class="text-gray-400">Разрабатываем дизайн-проект с учетом ваших пожеланий и согласовываем все детали</p>
+                    </div>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="relative">
+                    <div class="bg-secondary p-6 !rounded-lg border border-gray-800 h-full">
+                        <div class="absolute -top-4 -left-4 w-12 h-12 bg-primary !rounded-full flex items-center justify-center font-bold text-xl">3</div>
+                        <h3 class="text-xl font-bold mb-3 mt-4">Изготовление</h3>
+                        <p class="text-gray-400">Мастера приступают к работе. Вы можете следить за процессом по фото и видео отчетам</p>
+                    </div>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="relative">
+                    <div class="bg-secondary p-6 !rounded-lg border border-gray-800 h-full">
+                        <div class="absolute -top-4 -left-4 w-12 h-12 bg-primary !rounded-full flex items-center justify-center font-bold text-xl">4</div>
+                        <h3 class="text-xl font-bold mb-3 mt-4">Доставка и установка</h3>
+                        <p class="text-gray-400">Доставляем и устанавливаем готовый мангал на вашем участке. Проводим инструктаж по эксплуатации</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button class="btn-primary py-3 px-6 !rounded-button whitespace-nowrap font-medium" onclick="openModal('simpleOrderModal')">Оставить заявку</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция отзывов -->
+    <section id="reviews" class="py-20">
+        <div class="container mx-auto px-4 lg:px-16">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Отзывы наших клиентов</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Что говорят о нас те, кто уже приобрел наши мангалы</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-secondary bg-opacity-50 p-6 !rounded-lg border border-gray-800">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 !rounded-full overflow-hidden mr-4">
+                            <img src="/img/reviews/out..jpeg" alt="Алексей Смирнов" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Алексей Смирнов</h4>
+                            <div class="flex text-primary">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">Заказывал мангал «Премиум» с индивидуальным дизайном. Очень доволен результатом! Мангал не только функциональный, но и выглядит как настоящее произведение искусства. Все гости в восторге.</p>
+                </div>
+                
+                <!-- Review 2 -->
+                <div class="bg-secondary bg-opacity-50 p-6 !rounded-lg border border-gray-800">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 !rounded-full overflow-hidden mr-4">
+                            <img src="/img/reviews/out..jpeg" alt="Михаил Иванов" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Михаил Иванов</h4>
+                            <div class="flex text-primary">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">Долго выбирал мангал для дачи, остановился на модели «Классик». Качество на высоте, металл действительно толстый, сборка крепкая. Отдельное спасибо за оперативную доставку и установку.</p>
+                </div>
+                
+                <!-- Review 3 -->
+                <div class="bg-secondary bg-opacity-50 p-6 !rounded-lg border border-gray-800">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 !rounded-full overflow-hidden mr-4">
+                            <img src="/img/reviews/out..jpeg" alt="Екатерина Петрова" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Екатерина Петрова</h4>
+                            <div class="flex text-primary">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">Заказывали мангал «Люкс» с крышей для загородного дома. Результат превзошел все ожидания! Теперь это центральное место для отдыха всей семьи. Мясо получается просто великолепным.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция призыва к действию -->
+    <section class="py-20 bg-[#0F0F0F] relative">
+        <div class="absolute inset-0 opacity-20" style="background-image: url('/img/ogonb.jpg'); background-size: cover; background-position: center;"></div>
+        <div class="container mx-auto px-4 lg:px-16 relative z-10">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Готовы заказать свой идеальный мангал?</h2>
+                <p class="text-xl text-gray-300 mb-8">Оставьте заявку сейчас и получите скидку 10% на любую модель</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <button class="btn-primary py-4 px-8 !rounded-button whitespace-nowrap font-medium" onclick="openModal('quizModal')">Подобрать мангал</button>
+                    <button class="btn-outline py-4 px-8 !rounded-button whitespace-nowrap font-medium" onclick="openModal('simpleOrderModal')">Получить консультацию</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция контактов -->
+    <section id="contacts" class="py-20">
+        <div class="container mx-auto px-4 lg:px-16">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Контакты</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Свяжитесь с нами любым удобным способом</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <div class="bg-secondary p-8 !rounded-lg border border-gray-800">
+                        <h3 class="text-2xl font-bold mb-6">Наши контакты</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 !rounded-full mr-4">
+                                    <i class="ri-map-pin-line text-xl text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Адрес</h4>
+                                    <p class="text-gray-400">г. Москва, ул. Кузнечная, д. 15, стр. 3</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 !rounded-full mr-4">
+                                    <i class="ri-phone-line text-xl text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Телефон</h4>
+                                    <p class="text-gray-400">+7 (900) 123-45-67</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 !rounded-full mr-4">
+                                    <i class="ri-mail-line text-xl text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Email</h4>
+                                    <p class="text-gray-400">info@mangal-master.ru</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 !rounded-full mr-4">
+                                    <i class="ri-time-line text-xl text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Режим работы</h4>
+                                    <p class="text-gray-400">Ежедневно 9:00-21:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-bold mb-4">Мы в социальных сетях</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 !rounded-full hover:bg-primary transition-colors">
+                                    <i class="ri-vk-fill"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 !rounded-full hover:bg-primary transition-colors">
+                                    <i class="ri-telegram-fill"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 !rounded-full hover:bg-primary transition-colors">
+                                    <i class="ri-whatsapp-line"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 !rounded-full hover:bg-primary transition-colors">
+                                    <i class="ri-youtube-fill"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="bg-secondary p-8 !rounded-lg border border-gray-800">
+                        <h3 class="text-2xl font-bold mb-6">Напишите нам</h3>
+                        <form id="contactForm" class="space-y-6">
+                            <div>
+                                <label for="contactName" class="block mb-2 text-sm font-medium">Ваше имя</label>
+                                <input type="text" id="contactName" class="phone-input" placeholder="Введите ваше имя" required>
+                                <div class="error-message" id="contactNameError">Пожалуйста, введите ваше имя</div>
+                            </div>
+                            <div>
+                                <label for="contactPhone" class="block mb-2 text-sm font-medium">Номер телефона</label>
+                                <input type="tel" id="contactPhone" class="phone-input" placeholder="+7 (___) ___-__-__" required>
+                                <div class="error-message" id="contactPhoneError">Пожалуйста, введите корректный номер телефона</div>
+                            </div>
+                            <div>
+                                <label for="contactMessage" class="block mb-2 text-sm font-medium">Сообщение</label>
+                                <textarea id="contactMessage" rows="4" class="phone-input" placeholder="Введите ваше сообщение" required></textarea>
+                                <div class="error-message" id="contactMessageError">Пожалуйста, введите сообщение</div>
+                            </div>
+                            <div>
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" id="contactConsent" checked required>
+                                    <span class="checkmark"></span>
+                                    <span class="text-sm text-gray-300">Я согласен на обработку персональных данных</span>
+                                </label>
+                                <div class="error-message" id="contactConsentError">Необходимо согласие на обработку данных</div>
+                            </div>
+                            <button type="submit" class="btn-primary w-full py-4 !rounded-button whitespace-nowrap font-medium">Отправить сообщение</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 !rounded-lg overflow-hidden h-[400px]">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A2b2d3e56a37c9493377393ed8d50da1b2f675ee1097e127c7efddfd99e54b441&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал сайта -->
+    <footer class="bg-[#0A0A0A] py-12">
+        <div class="container mx-auto px-4 lg:px-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="text-2xl font-['Pacifico'] text-white mb-6">
+                        <span class="text-primary">Мангал</span>Мастер
+                    </div>
+                    <p class="text-gray-400 mb-6">Изготовление эксклюзивных мангалов ручной работы с индивидуальным дизайном</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 !rounded-full hover:bg-primary transition-colors">
+                            <i class="ri-vk-fill"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 !rounded-full hover:bg-primary transition-colors">
+                            <i class="ri-telegram-fill"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 !rounded-full hover:bg-primary transition-colors">
+                            <i class="ri-whatsapp-line"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 !rounded-full hover:bg-primary transition-colors">
+                            <i class="ri-youtube-fill"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Каталог</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Мангалы «Классик»</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Мангалы «Премиум»</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Мангалы «Люкс»</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Индивидуальные проекты</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Аксессуары для мангалов</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Информация</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">О компании</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Доставка и оплата</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Гарантия</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Вопросы и ответы</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Блог о мангалах</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Контакты</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <div class="w-6 h-6 flex items-center justify-center mr-2 text-primary">
+                                <i class="ri-map-pin-line"></i>
+                            </div>
+                            <span class="text-gray-400">г. Москва, ул. Кузнечная, д. 15, стр. 3</span>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-6 h-6 flex items-center justify-center mr-2 text-primary">
+                                <i class="ri-phone-line"></i>
+                            </div>
+                            <a href="tel:+79001234567" class="text-gray-400 hover:text-primary transition-colors">+7 (900) 123-45-67</a>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-6 h-6 flex items-center justify-center mr-2 text-primary">
+                                <i class="ri-mail-line"></i>
+                            </div>
+                            <a href="mailto:info@mangal-master.ru" class="text-gray-400 hover:text-primary transition-colors">info@mangal-master.ru</a>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-6 h-6 flex items-center justify-center mr-2 text-primary">
+                                <i class="ri-time-line"></i>
+                            </div>
+                            <span class="text-gray-400">Пн-Пт: 9:00 - 18:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 mb-4 md:mb-0">© 2025 МангалМастер. Все права защищены.</p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#" class="text-gray-500 hover:text-primary transition-colors">Политика конфиденциальности</a>
+                    <a href="#" class="text-gray-500 hover:text-primary transition-colors">Пользовательское соглашение</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно простого заказа -->
+    <div id="simpleOrderModal" class="modal">
+        <div class="modal-content mobile-scrollbar">
+            <div class="modal-header">
+                <h3 class="text-2xl font-bold">Заказать мангал</h3>
+                <button class="close-button" onclick="closeModal('simpleOrderModal')">
+                    <i class="ri-close-line"></i>
+                </button>
+            </div>
+            <form id="simpleOrderForm" class="space-y-6">
+                <div>
+                    <label for="simpleOrderName" class="block mb-2 text-sm font-medium">Ваше имя</label>
+                    <input type="text" id="simpleOrderName" class="phone-input" placeholder="Введите ваше имя" required>
+                    <div class="error-message" id="simpleOrderNameError">Пожалуйста, введите ваше имя</div>
+                </div>
+                <div>
+                    <label for="simpleOrderPhone" class="block mb-2 text-sm font-medium">Номер телефона</label>
+                    <input type="tel" id="simpleOrderPhone" class="phone-input" placeholder="+7 (___) ___-__-__" required>
+                    <div class="error-message" id="simpleOrderPhoneError">Пожалуйста, введите корректный номер телефона</div>
+                </div>
+                <div>
+                    <label for="simpleOrderComment" class="block mb-2 text-sm font-medium">Комментарий</label>
+                    <textarea id="simpleOrderComment" class="phone-input" rows="3" placeholder="Опишите ваши пожелания"></textarea>
+                </div>
+                <div>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" id="simpleOrderConsent" checked required>
+                        <span class="checkmark"></span>
+                        <span class="text-sm text-gray-300">Я согласен на обработку персональных данных</span>
+                    </label>
+                    <div class="error-message" id="simpleOrderConsentError">Необходимо согласие на обработку данных</div>
+                </div>
+                <button type="submit" class="btn-primary w-full py-4 !rounded-button whitespace-nowrap font-medium">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Модальное окно квиза -->
+    <div id="quizModal" class="modal">
+        <div class="modal-content mobile-scrollbar">
+            <div class="modal-header">
+                <h3 class="text-2xl font-bold">Подобрать мангал</h3>
+                <button class="close-button" onclick="closeModal('quizModal')">
+                    <i class="ri-close-line"></i>
+                </button>
+            </div>
+            <div class="progress-bar">
+                <div id="quizProgress" class="progress" style="width: 20%"></div>
+            </div>
+            <form id="quizForm" class="space-y-6">
+                <!-- Шаг 1 -->
+                <div class="quiz-step active" data-step="1">
+                    <h4 class="text-xl font-bold mb-4">Для чего вам нужен мангал?</h4>
+                    <div class="space-y-4">
+                        <label class="radio-option">
+                            <input type="radio" name="purpose" value="Для дачи" required>
+                            <span class="radio-text">Для дачи</span>
+                            <span class="radio-checked hidden"><i class="ri-check-line"></i></span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="purpose" value="Для загородного дома">
+                            <span class="radio-text">Для загородного дома</span>
+                            <span class="radio-checked hidden"><i class="ri-check-line"></i></span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="purpose" value="Для ресторана">
+                            <span class="radio-text">Для ресторана</span>
+                            <span class="radio-checked hidden"><i class="ri-check-line"></i></span>
+                        </label>
+                    </div>
+                    <div class="flex justify-end mt-6">
+                        <button type="button" class="btn-primary" onclick="nextQuizStep(1, 2)">Далее</button>
+                    </div>
+                </div>
+
+                <!-- Шаг 2 -->
+                <div class="quiz-step" data-step="2">
+                    <h4 class="text-xl font-bold mb-4">Какой размер мангала вам нужен?</h4>
+                    <div class="space-y-4">
+                        <label class="radio-option">
+                            <input type="radio" name="size" value="Компактный (до 100 см)" required>
+                            <span class="radio-text">Компактный (до 100 см)</span>
+                            <span class="radio-checked hidden"><i class="ri-check-line"></i></span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="size" value="Средний (100-150 см)">
+                            <span class="radio-text">Средний (100-150 см)</span>
+                            <span class="radio-checked hidden"><i class="ri-check-line"></i></span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="size" value="Большой (более 150 см)">
+                            <span class="radio-text">Большой (более 150 см)</span>
+                            <span class="radio-checked hidden"><i class="ri-check-line"></i></span>
+                        </label>
+                    </div>
+                    <div class="flex justify-between mt-6">
+                        <button type="button" class="btn-outline" onclick="prevQuizStep(2, 1)">Назад</button>
+                        <button type="button" class="btn-primary" onclick="nextQuizStep(2, 3)">Далее</button>
+                    </div>
+                </div>
+
+                <!-- Шаг 3 -->
+                <div class="quiz-step" data-step="3">
+                    <h4 class="text-xl font-bold mb-4">Какие дополнительные функции вам нужны?</h4>
+                    <div class="space-y-4">
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="features" value="Крыша">
+                            <span class="checkbox-text">Крыша</span>
+                            <span class="checkbox-checked hidden"><i class="ri-check-line"></i></span>
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="features" value="Дымоход">
+                            <span class="checkbox-text">Дымоход</span>
+                            <span class="checkbox-checked hidden"><i class="ri-check-line"></i></span>
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="features" value="Столик">
+                            <span class="checkbox-text">Столик</span>
+                            <span class="checkbox-checked hidden"><i class="ri-check-line"></i></span>
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="features" value="Полка для дров">
+                            <span class="checkbox-text">Полка для дров</span>
+                            <span class="checkbox-checked hidden"><i class="ri-check-line"></i></span>
+                        </label>
+                    </div>
+                    <div class="flex justify-between mt-6">
+                        <button type="button" class="btn-outline" onclick="prevQuizStep(3, 2)">Назад</button>
+                        <button type="button" class="btn-primary" onclick="nextQuizStep(3, 4)">Далее</button>
+                    </div>
+                </div>
+
+                <!-- Шаг 4 -->
+                <div class="quiz-step" data-step="4">
+                    <h4 class="text-xl font-bold mb-4">Какой дизайн вы предпочитаете?</h4>
+                    <div class="space-y-4">
+                        <label class="radio-option">
+                            <input type="radio" name="design" value="Классический" required>
+                            <span class="radio-text">Классический</span>
+                            <span class="radio-checked hidden"><i class="ri-check-line"></i></span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="design" value="Современный">
+                            <span class="radio-text">Современный</span>
+                            <span class="radio-checked hidden"><i class="ri-check-line"></i></span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="design" value="Художественная ковка">
+                            <span class="radio-text">Художественная ковка</span>
+                            <span class="radio-checked hidden"><i class="ri-check-line"></i></span>
+                        </label>
+                    </div>
+                    <div class="flex justify-between mt-6">
+                        <button type="button" class="btn-outline" onclick="prevQuizStep(4, 3)">Назад</button>
+                        <button type="button" class="btn-primary" onclick="nextQuizStep(4, 5)">Далее</button>
+                    </div>
+                </div>
+
+                <!-- Шаг 5 -->
+                <div class="quiz-step" data-step="5">
+                    <h4 class="text-xl font-bold mb-4">Оставьте свои контакты</h4>
+                    <div class="space-y-4">
+                        <div>
+                            <label for="quizName" class="block mb-2 text-sm font-medium">Ваше имя</label>
+                            <input type="text" id="quizName" class="phone-input" placeholder="Введите ваше имя" required>
+                            <div class="error-message" id="quizNameError">Пожалуйста, введите ваше имя</div>
+                        </div>
+                        <div>
+                            <label for="quizPhone" class="block mb-2 text-sm font-medium">Номер телефона</label>
+                            <input type="tel" id="quizPhone" class="phone-input" placeholder="+7 (___) ___-__-__" required>
+                            <div class="error-message" id="quizPhoneError">Пожалуйста, введите корректный номер телефона</div>
+                        </div>
+                        <div>
+                            <label for="quizComment" class="block mb-2 text-sm font-medium">Комментарий</label>
+                            <textarea id="quizComment" class="phone-input" rows="3" placeholder="Дополнительная информация"></textarea>
+                        </div>
+                    </div>
+                    <div class="flex justify-between mt-6">
+                        <button type="button" class="btn-outline" onclick="prevQuizStep(5, 4)">Назад</button>
+                        <button type="submit" class="btn-primary">Отправить заявку</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <style>
+        /* Стили для квиза */
+        .quiz-step {
+            display: none;
+        }
+
+        .quiz-step.active {
+            display: block;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 4px;
+            background: #1A1A1A;
+            border-radius: 2px;
+            margin-bottom: 24px;
+        }
+
+        .progress {
+            height: 100%;
+            background: #FF3A3A;
+            border-radius: 2px;
+            transition: width 0.3s ease;
+        }
+
+        .radio-option, .checkbox-option {
+            display: flex;
+            align-items: center;
+            padding: 16px;
+            background: #1A1A1A;
+            border: 1px solid #333;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .radio-option:hover, .checkbox-option:hover {
+            border-color: #FF3A3A;
+            background: rgba(255, 58, 58, 0.05);
+        }
+
+        .radio-option input, .checkbox-option input {
+            display: none;
+        }
+
+        .radio-text, .checkbox-text {
+            flex: 1;
+            margin-left: 12px;
+        }
+
+        .radio-checked, .checkbox-checked {
+            color: #FF3A3A;
+            font-size: 20px;
+        }
+
+        .radio-option input:checked + .radio-text + .radio-checked,
+        .checkbox-option input:checked + .checkbox-text + .checkbox-checked {
+            display: block;
+        }
+
+        .radio-option input:checked + .radio-text,
+        .checkbox-option input:checked + .checkbox-text {
+            color: #FF3A3A;
+        }
+
+        .radio-option input:checked ~ .radio-option,
+        .checkbox-option input:checked ~ .checkbox-option {
+            border-color: #FF3A3A;
+            background: rgba(255, 58, 58, 0.05);
+        }
+
+        /* Стили для кнопок в квизе */
+        .quiz-step .btn-primary,
+        .quiz-step .btn-outline {
+            min-width: 120px;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: 500;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .quiz-step .btn-primary {
+            background: #FF3A3A;
+            color: white;
+            border: none;
+        }
+
+        .quiz-step .btn-primary:hover {
+            background: #ff5252;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 58, 58, 0.2);
+        }
+
+        .quiz-step .btn-outline {
+            background: transparent;
+            color: white;
+            border: 1px solid #333;
+        }
+
+        .quiz-step .btn-outline:hover {
+            border-color: #FF3A3A;
+            color: #FF3A3A;
+            transform: translateY(-2px);
+        }
+
+        .quiz-step .flex.justify-between {
+            margin-top: 32px;
+            gap: 16px;
+        }
+    </style>
+
+    <!-- Модальное окно скидки -->
+    <div id="discountModal" class="modal">
+        <div class="modal-content mobile-scrollbar">
+            <div class="modal-header">
+                <h3 class="text-2xl font-bold">Получите скидку 10%</h3>
+                <button class="close-button" onclick="closeModal('discountModal')">
+                    <i class="ri-close-line"></i>
+                </button>
+            </div>
+            <div class="text-center mb-6">
+                <p class="text-lg">Оставьте заявку сейчас и получите скидку на любой мангал</p>
+            </div>
+            <form id="discountForm" class="space-y-6">
+                <div>
+                    <label for="discountName" class="block mb-2 text-sm font-medium">Ваше имя</label>
+                    <input type="text" id="discountName" class="phone-input" placeholder="Введите ваше имя" required>
+                    <div class="error-message" id="discountNameError">Пожалуйста, введите ваше имя</div>
+                </div>
+                <div>
+                    <label for="discountPhone" class="block mb-2 text-sm font-medium">Номер телефона</label>
+                    <input type="tel" id="discountPhone" class="phone-input" placeholder="+7 (___) ___-__-__" required>
+                    <div class="error-message" id="discountPhoneError">Пожалуйста, введите корректный номер телефона</div>
+                </div>
+                <div>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" id="discountConsent" checked required>
+                        <span class="checkmark"></span>
+                        <span class="text-sm text-gray-300">Я согласен на обработку персональных данных</span>
+                    </label>
+                    <div class="error-message" id="discountConsentError">Необходимо согласие на обработку данных</div>
+                </div>
+                <button type="submit" class="btn-primary w-full py-4 !rounded-button whitespace-nowrap font-medium">Получить скидку</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Модальное окно заказа товара -->
+    <div id="orderModal" class="modal">
+        <div class="modal-content max-w-4xl w-[95%] sm:w-[90%] md:w-[85%] mx-auto max-h-[90vh] overflow-y-auto mobile-scrollbar">
+            <div class="modal-header p-4 sm:p-6 sticky top-0 bg-secondary z-10">
+                <h3 class="text-xl sm:text-2xl font-bold">Заказать мангал</h3>
+                <button class="close-button" onclick="closeModal('orderModal')">
+                    <i class="ri-close-line"></i>
+                </button>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 p-4 sm:p-6">
+                <div class="space-y-3 sm:space-y-4">
+                    <!-- Большое фото -->
+                    <div class="cursor-pointer group relative" onclick="openFullImage(this.querySelector('img').src)">
+                        <img id="orderProductImage" src="" alt="" class="w-full h-40 sm:h-48 md:h-64 lg:h-80 object-cover rounded-lg">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-lg flex items-center justify-center">
+                            <i class="ri-zoom-in-line text-3xl sm:text-4xl text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i>
+                        </div>
+                    </div>
+                    <!-- Маленькие фото -->
+                    <div class="grid grid-cols-3 gap-2 sm:gap-3 md:gap-4">
+                        <div class="cursor-pointer group relative" onclick="openFullImage(this.querySelector('img').src)">
+                            <img src="/img/1.jpg" alt="" class="w-full h-16 sm:h-20 md:h-24 object-cover rounded-lg">
+                            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-lg flex items-center justify-center">
+                                <i class="ri-zoom-in-line text-xl sm:text-2xl text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i>
+                            </div>
+                        </div>
+                        <div class="cursor-pointer group relative" onclick="openFullImage(this.querySelector('img').src)">
+                            <img src="/img/2.jpg" alt="" class="w-full h-16 sm:h-20 md:h-24 object-cover rounded-lg">
+                            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-lg flex items-center justify-center">
+                                <i class="ri-zoom-in-line text-xl sm:text-2xl text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i>
+                            </div>
+                        </div>
+                        <div class="cursor-pointer group relative" onclick="openFullImage(this.querySelector('img').src)">
+                            <img src="/img/3.jpg" alt="" class="w-full h-16 sm:h-20 md:h-24 object-cover rounded-lg">
+                            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-lg flex items-center justify-center">
+                                <i class="ri-zoom-in-line text-xl sm:text-2xl text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-4 sm:space-y-6">
+                    <div>
+                        <h4 id="orderProductDescription" class="text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-4"></h4>
+                        <ul id="orderProductFeatures" class="space-y-2 sm:space-y-3 mb-3 sm:mb-4">
+                            <li class="flex items-start">
+                                <div class="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 flex items-center justify-center mr-2 sm:mr-3 text-primary">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="text-sm sm:text-base">Толщина металла от 4 мм</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 flex items-center justify-center mr-2 sm:mr-3 text-primary">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="text-sm sm:text-base">Художественная ковка</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 flex items-center justify-center mr-2 sm:mr-3 text-primary">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="text-sm sm:text-base">Прочная конструкция</span>
+                            </li>
+                        </ul>
+                        <div class="text-lg sm:text-xl md:text-2xl font-bold text-primary mb-4 sm:mb-6" id="orderProductPrice"></div>
+                    </div>
+                    <form id="orderForm" class="space-y-3 sm:space-y-4">
+                        <input type="hidden" id="orderProduct" name="product">
+                        <div>
+                            <label for="orderName" class="block mb-1 sm:mb-2 text-sm font-medium">Ваше имя</label>
+                            <input type="text" id="orderName" class="phone-input text-sm sm:text-base" placeholder="Введите ваше имя" required>
+                            <div class="error-message text-xs sm:text-sm" id="orderNameError">Пожалуйста, введите ваше имя</div>
+                        </div>
+                        <div>
+                            <label for="orderPhone" class="block mb-1 sm:mb-2 text-sm font-medium">Номер телефона</label>
+                            <input type="tel" id="orderPhone" class="phone-input text-sm sm:text-base" placeholder="+7 (___) ___-__-__" required>
+                            <div class="error-message text-xs sm:text-sm" id="orderPhoneError">Пожалуйста, введите корректный номер телефона</div>
+                        </div>
+                        <div>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" id="orderConsent" checked required>
+                                <span class="checkmark"></span>
+                                <span class="text-xs sm:text-sm text-gray-300">Я согласен на обработку персональных данных</span>
+                            </label>
+                            <div class="error-message text-xs sm:text-sm" id="orderConsentError">Необходимо согласие на обработку данных</div>
+                        </div>
+                        <button type="submit" class="btn-primary w-full py-2.5 sm:py-3 md:py-4 !rounded-button whitespace-nowrap font-medium text-sm sm:text-base">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно для просмотра фото -->
+    <div id="fullImageModal" class="modal">
+        <div class="modal-content p-0 bg-transparent w-[95%] sm:w-[90%] md:w-[85%] max-h-[90vh] mx-auto overflow-y-auto mobile-scrollbar">
+            <button class="close-button absolute top-2 sm:top-4 right-2 sm:right-4 z-10" onclick="closeModal('fullImageModal')">
+                <i class="ri-close-line text-white text-xl sm:text-2xl"></i>
+            </button>
+            <img id="fullImage" src="" alt="" class="max-w-full max-h-[90vh] mx-auto rounded-lg">
+        </div>
+    </div>
+
+    <style>
+        /* Стили для скроллбара */
+        .scrollbar-thin::-webkit-scrollbar {
+            width: 6px;
+        }
+        
+        .scrollbar-thin::-webkit-scrollbar-track {
+            background: #1A1A1A;
+            border-radius: 3px;
+        }
+        
+        .scrollbar-thin::-webkit-scrollbar-thumb {
+            background: #FF3A3A;
+            border-radius: 3px;
+        }
+        
+        .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+            background: #ff5252;
+        }
+        
+        /* Скрываем скроллбар на мобильных устройствах */
+        .mobile-scrollbar::-webkit-scrollbar {
+            width: 0;
+            background: transparent;
+        }
+        
+        .mobile-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        
+        /* Показываем скроллбар на десктопе */
+        @media (min-width: 768px) {
+            .md\:scrollbar-visible::-webkit-scrollbar {
+                width: 6px;
+            }
+            
+            .md\:scrollbar-visible {
+                -ms-overflow-style: auto;
+                scrollbar-width: thin;
+            }
+        }
+    </style>
+
+    <script src="/js/scripts.js"></script>
+</body>
+</html>
